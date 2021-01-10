@@ -1,16 +1,33 @@
-html,
-body {
+:root {
+  --fuenteTitulos: "Courgette", cursive;
+  --fuenteGenerica: "Work Sans", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  font-family: var(--fuenteGenerica);
+}
+
+h1 {
+  font-family: "Courgette", cursive;
+  font-weight: 400;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
